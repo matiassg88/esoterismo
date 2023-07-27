@@ -55,7 +55,12 @@ header button{
     flex: 1 0 calc(50% - 2%); /* Ancho del 50% con espacio para el margen */
     box-sizing: border-box; /* Para incluir padding en el ancho */
 }
-
+#form-control{
+    background-color: transparent;
+}
+#form-control::placeholder{
+    color: #28a745;
+}
 .carousel-inner {
     width: 100%;
     height: 100%;
@@ -82,7 +87,13 @@ header button{
 
 
 /*velas html*/
-
+#dropdown-menu{
+    background-image: url('index-IMG/espacio.jpg');
+    
+}
+a .dropdown-item{
+   
+}
 .Lista-Card {
     display: flex;
     flex-wrap: wrap;
@@ -97,7 +108,7 @@ header button{
 }
 
 .card {
-    flex: 1 0 calc(25% - 2%);
+    flex: 1 0 calc(25% - 2%);/*25 porque son 4 en una caja y -2 por el padding y el margin*/
     padding: 1%;
     background-color: #28a745;
     box-sizing: border-box;
@@ -113,7 +124,7 @@ header button{
 .img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajustar la imagen para que ocupe todo el espacio y se recorte si es necesario */
+    /* object-fit: cover; Ajustar la imagen para que ocupe todo el espacio y se recorte si es necesario *//*no quiero recorte*/
 }
 
 .card-body {
@@ -128,6 +139,7 @@ header button{
     text-align: justify;
     color: yellowgreen;
 }
+
 
 
 
